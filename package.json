@@ -2,12 +2,14 @@
   "name": "backend-practical-exam",
   "version": "1.0.0",
   "description": "Backend practical examination project",
-  "main": "file/A1.js",
+  "main": "file/task1.js",
   "scripts": {
-    "start:a1": "node file/A1.js",
-    "start:a2": "node file/A2.js",
-    "dev:a1": "nodemon file/A1.js",
-    "dev:a2": "nodemon file/A2.js"
+    "start:task1": "node file/task1.js",
+    "start:task2": "node file/task2.js",
+    "dev:task1": "nodemon file/task1.js",
+    "dev:task2": "nodemon file/task2.js",
+    "start:a1": "node file/task1.js",
+    "start:a2": "node file/task2.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

@@ -11,13 +11,13 @@
 ```text
 backend_Practical_RegisterNo_Name/
 ├── file/
-│   ├── A1.js          # Task 1: Library Book Management REST API
-│   └── A2.js          # Task 2: Student Portal with Auth & Protected Routes
+│   ├── task1.js       # Task 1: Library Book Management REST API
+│   └── task2.js       # Task 2: Student Portal with Auth & Protected Routes
 ├── outputs/
-│   ├── A1.png         # Task 1: API test & MongoDB document screenshot
-│   ├── A2.png         # Task 2: Auth, profile & RBAC test screenshot
-│   ├── A1/            # Additional Task 1 screenshots (POST, GET, DB)
-│   └── A2/            # Additional Task 2 screenshots
+│   ├── task1.png      # Task 1: API test & MongoDB document screenshot
+│   ├── task2.png      # Task 2: Auth, profile & RBAC test screenshot
+│   ├── task1/         # Task 1 test results (POST, GET, MongoDB)
+│   └── task2/         # Task 2 test results (Registration, Login, RBAC)
 ├── .gitignore         # Excludes node_modules/ and local files
 ├── package.json       # Project dependencies & scripts
 └── README.md          # Project documentation
@@ -36,7 +36,7 @@ backend_Practical_RegisterNo_Name/
 
 ---
 
-## Task 1: Library Book Management API (`file/A1.js`)
+## Task 1: Library Book Management API (`file/task1.js`)
 
 A REST API for managing college library books built using Node.js, Express, and Mongoose. Includes request logging and centralized error handling middleware.
 
@@ -45,9 +45,9 @@ A REST API for managing college library books built using Node.js, Express, and 
 
 ### Run Command:
 ```bash
-node file/A1.js
+node file/task1.js
 # Or with nodemon:
-npm run dev:a1
+npm run dev:task1
 ```
 
 ### Endpoints:
@@ -59,7 +59,7 @@ npm run dev:a1
 
 ---
 
-## Task 2: Student Portal with Auth & Protected Routes (`file/A2.js`)
+## Task 2: Student Portal with Auth & Protected Routes (`file/task2.js`)
 
 A secure student portal featuring input validation, bcrypt password hashing, 1-hour JWT session tokens, role-based access control (RBAC), and web security headers.
 
@@ -69,9 +69,9 @@ A secure student portal featuring input validation, bcrypt password hashing, 1-h
 
 ### Run Command:
 ```bash
-node file/A2.js
+node file/task2.js
 # Or with nodemon:
-npm run dev:a2
+npm run dev:task2
 ```
 
 ### Endpoints:
@@ -82,9 +82,14 @@ npm run dev:a2
 
 ---
 
-## Output Screenshots
+## Output Screenshots & API Test Results
 
 All testing screenshots are saved inside the `outputs/` folder:
-- **`outputs/A1.png`**: Thunder Client requests & MongoDB database view for Task 1.
-- **`outputs/A2.png`**: Thunder Client authentication, profile, and role-based access tests for Task 2.
-- Additional detailed test captures are preserved in `outputs/A1/` and `outputs/A2/`.
+- **`outputs/task1.png`**: Thunder Client requests & MongoDB database view for Task 1.
+- **`outputs/task2.png`**: Thunder Client authentication, profile, and role-based access tests for Task 2.
+- **`outputs/task1/`**: Detailed Task 1 test captures:
+  - `adding_item_to_db(post).png`
+  - `get.png`
+  - `task1db.png`
+- **`outputs/task2/`**: Detailed Task 2 test captures:
+  - `task2.png`
