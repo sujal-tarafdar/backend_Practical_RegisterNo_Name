@@ -1,11 +1,3 @@
-# Backend Practical Exam Submission
-
-- **Student Name:** Sujal
-- **Registration Number:** [Your Register Number]
-- **Subject:** Backend Web Development Practical Examination
-
----
-
 ## Project Structure
 
 ```text
